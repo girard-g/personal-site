@@ -3,20 +3,27 @@
 	import { onMount } from 'svelte';
 
 	const { links = [] } = $props();
+
+	let scrolled = $state(false);
+
+	function handleScroll() {
+		if (window.scrollY > 0) {
+			scrolled = true;
+		} else {
+			scrolled = false;
+		}
+	}
+
 	onMount(() => {
 		initFlowbite();
+		window.addEventListener('scroll', handleScroll);
 	});
 </script>
 
-<!-- <header -->
-<!-- 	class={`fixed z-50 w-full transition-all duration-300 ${scrolled ? 'bg-dark-400/90 shadow-md backdrop-blur-sm' : 'bg-transparent'}`} -->
-<!-- > -->
 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-	<!-- <div class="flex items-center justify-between py-4"> -->
-	<!-- 	<div class="flex items-center"> -->
-	<!-- 	</div> -->
-
-	<nav class="fixed start-0 top-0 z-20 w-full">
+	<nav
+		class={`fixed start-0 top-0 z-20 w-full transition-all duration-300 sm:px-6 lg:px-8 ${scrolled ? 'bg-dark-400/90 shadow-md backdrop-blur-sm' : 'bg-transparent'}`}
+	>
 		<div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
 			<a href="/" class="text-primary-500 text-2xl font-bold">
 				Guillaume<span class="text-white">.Tech</span>
@@ -54,7 +61,7 @@
 			</div>
 			<div class="hidden w-300 w-full items-center md:order-1 md:flex md:w-auto" id="navbar-sticky">
 				<ul
-					class="bg-dark-500 mt-4 flex flex-col rounded-lg p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse"
+					class="mt-4 flex flex-col rounded-lg p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 rtl:space-x-reverse"
 				>
 					{#each links as link (link.id)}
 						<li>
