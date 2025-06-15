@@ -1,3 +1,9 @@
+<script lang="ts">
+	import Briefcase from './icons/Briefcase.svelte';
+	import Envelope from './icons/envelope.svelte';
+	import User from './icons/User.svelte';
+</script>
+
 <section id="hero" class="flex min-h-screen items-center pt-16">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="grid items-center gap-8 md:grid-cols-2">
@@ -6,10 +12,41 @@
 					<span class="text-white">Guillaume Girard</span>
 					<span class="text-primary-500 block">Chief Technology Officer</span>
 				</h1>
-				<p class="mb-8 max-w-lg text-xl text-gray-300">
-					Driving digital transformation through innovative technology solutions and strategic
-					leadership.
-				</p>
+				<div class="mb-6 flex flex-col gap-8">
+					<p class="max-w-lg text-xl text-gray-300">
+						Driving digital transformation through innovative technology solutions and strategic
+						leadership.
+					</p>
+					<div class="space-y-4 pt-4">
+						<div class="flex items-center gap-4">
+							<div class="bg-primary-500/20 text-primary-500 rounded-full p-3">
+								<User />
+							</div>
+							<div>
+								<h4 class="text-secondary-500 font-medium">Name</h4>
+								<p class="text-gray-300">Guillaume Girard</p>
+							</div>
+						</div>
+						<div class="flex items-center gap-4">
+							<div class="bg-primary-500/20 text-primary-500 rounded-full p-3">
+								<Briefcase />
+							</div>
+							<div>
+								<h4 class="text-secondary-500 font-medium">Role</h4>
+								<p class="text-gray-300">Chief Technology Officer</p>
+							</div>
+						</div>
+						<div class="flex items-center gap-4">
+							<div class="bg-primary-500/20 text-primary-500 rounded-full p-3">
+								<Envelope />
+							</div>
+							<div>
+								<h4 class="text-secondary-500 font-medium">Email</h4>
+								<p class="text-gray-300">guillaumegirardpro@gmail.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="flex flex-wrap gap-4">
 					<button
 						class="bg-primary-500 hover:bg-primary-600 flex cursor-pointer items-center gap-2 rounded-md px-6 py-3 font-medium text-white transition-colors"
@@ -20,7 +57,7 @@
 					</button>
 					<a
 						href="#about"
-						class="hover:border-primary-500 hover:text-primary-500 rounded-md border border-gray-600 px-6 py-3 font-medium transition-colors"
+						class="hover:border-primary-500 hover:text-primary-500 border-primary-500 rounded-md border px-6 py-3 font-medium text-gray-300 transition-colors"
 					>
 						Learn More
 					</a>
@@ -38,7 +75,9 @@
 						</div>
 					</div>
 					<div class="bg-dark-300 absolute -right-2 -bottom-2 rounded-lg p-3 shadow-lg">
-						<span class="text-primary-500 font-semibold">10+ Years in Tech</span>
+						<span class="text-primary-500 font-semibold"
+							><span class="text-secondary-500">10+</span> Years in Tech</span
+						>
 					</div>
 				</div>
 			</div>

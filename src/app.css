@@ -5,27 +5,49 @@
 @plugin 'flowbite/plugin';
 
 @theme {
-	--color-primary-50: #fff7ed;
-	--color-primary-100: #ffedd5;
-	--color-primary-200: #fed7aa;
-	--color-primary-300: #fdba74;
-	--color-primary-400: #fb923c;
-	--color-primary-500: #f97316;
-	--color-primary-600: #ea580c;
-	--color-primary-700: #c2410c;
-	--color-primary-800: #9a3412;
-	--color-primary-900: #7c2d12;
+	/* --color-primary-50: #fff7ed; */
+	/* --color-primary-100: #ffedd5; */
+	/* --color-primary-200: #fed7aa; */
+	/* --color-primary-300: #fdba74; */
+	/* --color-primary-400: #fb923c; */
+	/* --color-primary-500: #f97316; */
+	/* --color-primary-600: #ea580c; */
+	/* --color-primary-700: #c2410c; */
+	/* --color-primary-800: #9a3412; */
+	/* --color-primary-900: #7c2d12; */
 
-	--color-secondary-50: #f0f9ff;
-	--color-secondary-100: #e0f2fe;
-	--color-secondary-200: #bae6fd;
-	--color-secondary-300: #7dd3fc;
-	--color-secondary-400: #38bdf8;
-	--color-secondary-500: #0ea5e9;
-	--color-secondary-600: #0284c7;
-	--color-secondary-700: #0369a1;
-	--color-secondary-800: #075985;
-	--color-secondary-900: #0c4a6e;
+	/* --color-secondary-50: #f0f9ff; */
+	/* --color-secondary-100: #e0f2fe; */
+	/* --color-secondary-200: #bae6fd; */
+	/* --color-secondary-300: #7dd3fc; */
+	/* --color-secondary-400: #38bdf8; */
+	/* --color-secondary-500: #0ea5e9; */
+	/* --color-secondary-600: #0284c7; */
+	/* --color-secondary-700: #0369a1; */
+	/* --color-secondary-800: #075985; */
+	/* --color-secondary-900: #0c4a6e; */
+
+	--color-primary-50: #f0f9e8;
+	--color-primary-100: #d9e8b8;
+	--color-primary-200: #c0d89a;
+	--color-primary-300: #a8c77b;
+	--color-primary-400: #8fb65c;
+	--color-primary-500: #556b2f;
+	--color-primary-600: #4a5c2a;
+	--color-primary-700: #3e4e24;
+	--color-primary-800: #323f1f;
+	--color-primary-900: #27311a;
+
+	--color-secondary-50: #fef6e5;
+	--color-secondary-100: #fce1b5;
+	--color-secondary-200: #f9cc85;
+	--color-secondary-300: #f6b355;
+	--color-secondary-400: #f39e25;
+	--color-secondary-500: #d97c30;
+	--color-secondary-600: #c76a2a;
+	--color-secondary-700: #b55824;
+	--color-secondary-800: #a3461e;
+	--color-secondary-900: #922c18;
 
 	--color-dark-100: #1a1f2c;
 	--color-dark-200: #403e43;
@@ -43,4 +65,8 @@
 	input[type='search']::-webkit-search-cancel-button {
 		display: none;
 	}
+}
+
+html {
+	scroll-behavior: smooth;
 }

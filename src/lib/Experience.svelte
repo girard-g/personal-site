@@ -45,7 +45,7 @@
 <section id="experience" class="bg-dark-400 py-20">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="mx-auto mb-16 max-w-3xl text-center">
-			<h2 class="mb-4 text-3xl font-bold md:text-4xl">Professional Experience</h2>
+			<h2 class="mb-4 text-3xl font-bold text-white md:text-4xl">Professional Experience</h2>
 			<div class="bg-primary-500 mx-auto mb-6 h-1 w-20"></div>
 			<p class="text-lg text-gray-300">
 				A career journey building and leading technology solutions
@@ -53,12 +53,12 @@
 		</div>
 
 		<div class="mx-auto max-w-4xl">
-			<div class="border-dark-200 relative ml-3 border-l-2">
+			<div class="border-dark-200 relative ml-3 space-y-4 border-l-4">
 				{#each experiences as exp (exp.id)}
 					<div
-						class="bg-primary-500 border-dark-400 absolute -left-3 h-6 w-6 rounded-full border-4"
+						class="bg-secondary-500 border-dark-400 absolute -left-3 h-6 w-6 rounded-full border-4"
 					></div>
-					<div class="bg-dark-300 rounded-lg p-6 shadow-md transition-shadow hover:shadow-lg">
+					<div class="bg-dark-500 rounded-lg p-6 shadow-md transition-shadow hover:shadow-lg">
 						<div class="mb-2 flex flex-wrap justify-between">
 							<h3 class="text-xl font-semibold text-white">{exp.title}</h3>
 							<span

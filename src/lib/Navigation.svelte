@@ -20,24 +20,26 @@
 	});
 </script>
 
-<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="container mx-auto bg-green-500 px-4 sm:px-6 lg:px-8">
 	<nav
-		class={`fixed start-0 top-0 z-20 w-full transition-all duration-300 sm:px-6 lg:px-8 ${scrolled ? 'bg-dark-400/90 shadow-md backdrop-blur-sm' : 'bg-transparent'}`}
+		class={`fixed start-0 top-0 z-20 w-full transition-all duration-300 sm:px-6 lg:px-8 ${scrolled ? 'bg-dark-500/90 shadow-xl backdrop-blur-sm' : 'bg-transparent'}`}
 	>
 		<div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
 			<a href="/" class="text-primary-500 text-2xl font-bold">
 				Guillaume<span class="text-white">.Tech</span>
 			</a>
 			<div class="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
-				<!-- <button -->
-				<!-- 	type="button" -->
-				<!-- 	class="bg-primary-700 rounded-lg px-4 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" -->
-				<!-- 	>Get started</button -->
-				<!-- > -->
+				<button
+					class="bg-primary-500 hover:bg-primary-600 flex cursor-pointer items-center gap-2 rounded-md px-4 py-2 text-sm font-medium text-white transition-colors"
+				>
+					Get in Touch
+					<!--TODO: Add icon here-->
+					<!-- <ArrowRight size={18} /> -->
+				</button>
 				<button
 					data-collapse-toggle="navbar-sticky"
 					type="button"
-					class="inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 focus:outline-none md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+					class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 focus:outline-none md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
 					aria-controls="navbar-sticky"
 					aria-expanded="false"
 				>
@@ -59,9 +61,12 @@
 					</svg>
 				</button>
 			</div>
-			<div class="hidden w-300 w-full items-center md:order-1 md:flex md:w-auto" id="navbar-sticky">
+			<div
+				class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto"
+				id="navbar-sticky"
+			>
 				<ul
-					class="mt-4 flex flex-col rounded-lg p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 rtl:space-x-reverse"
+					class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-transparent p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 rtl:space-x-reverse"
 				>
 					{#each links as link (link.id)}
 						<li>

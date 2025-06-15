@@ -7,8 +7,7 @@
 		{ id: 0, href: '/', label: 'Home' },
 		{ id: 1, href: '#about', label: 'About' },
 		{ id: 2, href: '#skills', label: 'Skillz' },
-		{ id: 3, href: '#experience', label: 'Experience' },
-		{ id: 4, href: '#contact', label: 'Contact' }
+		{ id: 3, href: '#experience', label: 'Experience' }
 	];
 </script>
 
