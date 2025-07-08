@@ -10,7 +10,7 @@
 			<div class="order-2 md:order-1">
 				<h1 class="mb-4 text-4xl leading-tight font-bold md:text-5xl">
 					<span class="text-white">Guillaume Girard</span>
-					<span class="text-primary-500 block">Chief Technology Officer</span>
+					<span class="text-primary-500 block">Freelance</span>
 				</h1>
 				<div class="mb-6 flex flex-col gap-8">
 					<p class="max-w-lg text-xl text-gray-300">
@@ -33,7 +33,7 @@
 							</div>
 							<div>
 								<h4 class="text-secondary-500 font-medium">Role</h4>
-								<p class="text-gray-300">Chief Technology Officer</p>
+								<p class="text-gray-300">CTO - LEAD - DEV</p>
 							</div>
 						</div>
 						<div class="flex items-center gap-4">
